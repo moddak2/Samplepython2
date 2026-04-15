@@ -1,0 +1,63 @@
+rules:
+  - id: training.sql-injection
+    message: "[TRAINING] SQL Injection scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:SQL_INJECTION"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.buffer-overflow
+    message: "[TRAINING] Buffer Overflow scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:BUFFER_OVERFLOW"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.broken-auth
+    message: "[TRAINING] Broken Authentication scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:BROKEN_AUTH"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.sensitive-data-exposure
+    message: "[TRAINING] Sensitive Data Exposure scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:SENSITIVE_DATA_EXPOSURE"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.insecure-deserialization
+    message: "[TRAINING] Insecure Deserialization scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:INSECURE_DESERIALIZATION"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.idor
+    message: "[TRAINING] IDOR scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:IDOR"
+    paths:
+      include:
+        - "/vuln_markers/**"
+
+  - id: training.path-traversal
+    message: "[TRAINING] Path Traversal scenario marker (simulated finding)."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: "TRAINING_VULN:PATH_TRAVERSAL"
+    paths:
+      include:
+        - "/vuln_markers/**"

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "samplepython2-fastapi"
+version = "0.1.0"
+description = "Secure FastAPI sample with tests/build"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
